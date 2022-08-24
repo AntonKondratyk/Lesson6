@@ -11,6 +11,18 @@ namespace Task1
         static void Main(string[] args)
         {
             string str = Console.ReadLine();
+            string[] strArray = str.Split();
+            string max = strArray[0];
+            foreach (string s in strArray)
+            {
+                if (s.Length > max.Length)
+                {
+                    max = s;
+                }
+            }
+            Console.WriteLine(max);
+            Console.ReadKey();
+            /*string str = Console.ReadLine();
             string[] strArray=str.Split();
             string min = strArray[0];
             foreach (string s in strArray)
@@ -21,7 +33,7 @@ namespace Task1
                 }
             }
             Console.WriteLine(min);
-            Console.ReadKey();
+            Console.ReadKey();*/
         }
     }
 }
